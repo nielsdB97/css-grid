@@ -557,7 +557,7 @@ a.topstory {
 
 .editors-picks .rsNav {
   max-height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 .editors-picks .rsThumbsContainer {
   display: grid;

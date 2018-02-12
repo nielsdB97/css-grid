@@ -1,2 +1,4 @@
 # css-grid
-Website using CSS Grid layout
+Recreation of [NOS.nl](https://nos.nl) using CSS Grid layout.
+
+[Live example](https://nos.netlify.com/)

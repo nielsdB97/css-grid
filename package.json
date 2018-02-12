@@ -1,0 +1,32 @@
+{
+  "name": "css-grid",
+  "version": "1.0.0",
+  "description": "Website using CSS Grid layout",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "babel-core": "^7.0.0-beta.3",
+    "browser-sync": "^2.23.6",
+    "eslint": "^4.17.0",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nielsdB97/css-grid.git"
+  },
+  "author": "Niels de Bruin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nielsdB97/css-grid/issues"
+  },
+  "homepage": "https://github.com/nielsdB97/css-grid#readme"
+}

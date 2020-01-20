@@ -531,7 +531,12 @@ a.topstory {
 .editors-picks .slider {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1fr 33vw;
+  grid-template-columns: 1fr minmax(300px, 33.33%);
+}
+@media screen and (min-width: 1200px) {
+  .editors-picks .slider {
+    height: 420px;
+  }
 }
 .editors-picks .slider_item figure {
   margin: 0;

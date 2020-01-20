@@ -13,10 +13,6 @@ var paths = {
   styles: {
     src: 'src/styles.css',
     dest: 'dist/css',
-  },
-  scripts: {
-    src: 'src/scripts.js',
-    dest: 'dist/js/',
   }
 }
 
@@ -39,21 +35,10 @@ function styles() {
     .pipe(gulp.dest(paths.styles.dest))
     .pipe(browserSync.stream());
 }
-function scripts() {
-  return gulp.src(paths.scripts.src)
-    .pipe(babel({
-      presets: ['@babel/env'],
-      minified: true,
-      comments: false
-    }))
-    .pipe(concat('scripts.js'))
-    .pipe(gulp.dest(paths.scripts.dest));
-}
 
 function watch() {
   gulp.watch(paths.html.src, copyHTML);
   gulp.watch(paths.styles.src, styles);
-  gulp.watch(paths.scripts.src, scripts);
 }
 
 function webserver() {
@@ -65,7 +50,7 @@ function webserver() {
   });
 }
 
-var build = gulp.series(clean, gulp.parallel(copyHTML, styles, scripts));
+var build = gulp.series(clean, gulp.parallel(copyHTML, styles));
 
 gulp.task('build', build);
 gulp.task('default', gulp.series(build, gulp.parallel(webserver, watch)));
